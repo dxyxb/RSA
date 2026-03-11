@@ -30,7 +30,7 @@ public class CodeGenerator {
                         .serviceImpl("service.impl")
                         .controller("controller")
                         // XML 文件输出路径
-                        .pathInfo(Collections.singletonMap(OutputFile.mapper,
+                        .pathInfo(Collections.singletonMap(OutputFile.xml,
                                 System.getProperty("user.dir") + "/src/main/resources/mybatis-plus"))
                 )
                 // 策略配置：生成所有 11 张表

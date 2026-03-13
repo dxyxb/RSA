@@ -10,7 +10,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor // 🔥 新增：生成全参构造函数
 @Schema(name = "Result", description = "统一返回结果")
 public class Result<T> {
-    @Schema(description = "状态码")
+    @Schema(description = "状态码：200成功，500失败")
     private int code;
     @Schema(description = "消息")
     private String msg;
